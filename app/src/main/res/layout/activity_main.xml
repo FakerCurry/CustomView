@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sjw.androidcustomview.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.sjw.androidcustomview.QQStepyView
+                android:id="@+id/step_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:borderWidth="20dp"
+                app:innerColor="@color/colorAccent"
+                app:outerColor="@color/colorPrimary"
+                app:stepyTextColor="@color/colorAccent"
+                app:stepyTextSize="20sp" />
+
+            <com.sjw.androidcustomview.ColorChangeView
+                android:id="@+id/colorChangeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello 你好"
+                android:visibility="gone"
+                app:changeColor="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="leftToRight"
+                    android:text="左到右" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="rightToLeft"
+                    android:text="右到左" />
+            </LinearLayout>
+
+
+            <com.sjw.androidcustomview.LetterSideBarView
+                android:id="@+id/letter_SideBar_View"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                app:letterColor="@color/colorPrimary"
+                app:letterCurrentColor="@color/colorAccent"
+                app:letterSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--字母哪个自定义的中间那个textView-->
+    <TextView
+        android:id="@+id/mLetterTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="A"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</RelativeLayout>

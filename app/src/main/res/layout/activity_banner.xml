@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sjw.androidcustomview.BannerActivity">
+
+    <com.sjw.androidcustomview.banner.BannerView
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bottomColor="@color/trans_gray"
+        app:dotDistance="10dp"
+        app:dotGravity="center"
+        app:dotIndicatorFocus="@color/banner_dot_select"
+        app:dotIndicatorNormal="@color/banner_dot_unselect"
+        app:widthProportion="8"
+        app:heightProportion="3"
+        app:dotSize="8dp"></com.sjw.androidcustomview.banner.BannerView>
+
+</LinearLayout>

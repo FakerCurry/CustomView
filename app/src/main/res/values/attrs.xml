@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QQStepyView">
+        <attr name="outerColor" format="color" />
+        <attr name="innerColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="stepyTextSize" format="dimension" />
+        <attr name="stepyTextColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ColorChangeView">
+
+        <attr name="originColor" format="color" />
+        <attr name="changeColor" format="color" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="LetterSideBarView">
+        <attr name="letterColor" format="color" />
+        <attr name="letterCurrentColor" format="color" />
+        <attr name="letterSize" format="dimension" />
+    </declare-styleable>
+
+    <!--流式布局-->
+
+    <declare-styleable name="MyTagLayout">
+
+        <!--设置最大选择计数；-->
+        <!--默认值是1，这意味着您可以同时选择一个项目。-->
+        <attr name="maxSelectCount" format="integer|enum">
+            <enum name="all" value="-1" />
+            <enum name="single" value="1" />
+            <enum name="none" value="0" />
+        </attr>
+
+        <!-- 是否在一行中的所有项，默认值为false -->
+        <attr name="singleLine" format="boolean" />
+
+        <!-- 将最大项设置为一行，默认值为-1，
+这意味着VIEW将自动计算一行中的孩子。-->
+        <attr name="maxItemsInOneLine" format="integer" />
+
+        <!-- 如果项具有相等的宽度，则默认为false。
+只有在设置MaxItMeSimOnLeIn属性时，此属性才是
+这样就会产生效果。-->
+        <attr name="isItemsEqualWidth" format="boolean" />
+
+    </declare-styleable>
+
+
+    <!--手写轮播图-->
+    <!--点的颜色 2个、点的大小、点的间距、点的位置、底部的颜色-->
+    <declare-styleable name="BannerView">
+        <!--当前选中的点的颜色,可能会设置图片,加了reference-->
+        <attr name="dotIndicatorFocus" format="color|reference" />
+        <!--没有选中的点的颜色,可能会设置图片,加了reference-->
+        <attr name="dotIndicatorNormal" format="color|reference" />
+        <!--圆点的大小-->
+        <attr name="dotSize" format="dimension" />
+        <!--圆点之间的距离-->
+        <attr name="dotDistance" format="dimension" />
+        <!--圆点的位置 左右中-->
+        <attr name="dotGravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+            <enum name="left" value="-1" />
+        </attr>
+        <!--底部横条的颜色-->
+        <attr name="bottomColor" format="color" />
+        <!--定义宽高比-->
+        <attr name="widthProportion" format="float" />
+        <attr name="heightProportion" format="float" />
+    </declare-styleable>
+</resources>
