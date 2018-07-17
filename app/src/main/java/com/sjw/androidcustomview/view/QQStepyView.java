@@ -1,4 +1,4 @@
-package com.sjw.androidcustomview;
+package com.sjw.androidcustomview.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,6 +10,8 @@ import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.sjw.androidcustomview.R;
 
 /**
  * Created by pc on 2018/6/16.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sjw.androidcustomview.demo.LetterSidebarActivity">
+    <com.sjw.androidcustomview.view.LetterSideBarView
+        android:id="@+id/letter_SideBar_View"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:letterColor="@color/colorPrimary"
+        app:letterCurrentColor="@color/colorAccent"
+        app:letterSize="15sp" />
+
+    <!--字母哪个自定义的中间那个textView-->
+    <TextView
+        android:id="@+id/mLetterTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="A"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</RelativeLayout>

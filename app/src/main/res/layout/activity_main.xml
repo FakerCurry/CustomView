@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
 
-            <com.sjw.androidcustomview.QQStepyView
+            <com.sjw.androidcustomview.view.QQStepyView
                 android:id="@+id/step_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -29,19 +29,19 @@
                 app:stepyTextColor="@color/colorAccent"
                 app:stepyTextSize="20sp" />
 
-            <com.sjw.androidcustomview.ColorChangeView
+            <com.sjw.androidcustomview.view.ColorChangeView
                 android:id="@+id/colorChangeView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hello 你好"
-                android:visibility="gone"
+
                 app:changeColor="@color/colorAccent" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:visibility="gone">
+               >
 
                 <Button
                     android:layout_width="wrap_content"
@@ -57,13 +57,14 @@
             </LinearLayout>
 
 
-            <com.sjw.androidcustomview.LetterSideBarView
+            <com.sjw.androidcustomview.view.LetterSideBarView
                 android:id="@+id/letter_SideBar_View"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:padding="10dp"
                 app:letterColor="@color/colorPrimary"
                 app:letterCurrentColor="@color/colorAccent"
+                android:visibility="gone"
                 app:letterSize="15sp" />
 
         </LinearLayout>

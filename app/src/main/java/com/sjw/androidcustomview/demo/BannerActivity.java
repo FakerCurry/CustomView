@@ -1,4 +1,4 @@
-package com.sjw.androidcustomview;
+package com.sjw.androidcustomview.demo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.sjw.androidcustomview.R;
 import com.sjw.androidcustomview.banner.BannerAdapter;
 import com.sjw.androidcustomview.banner.BannerView;
 import com.sjw.androidcustomview.banner.BannerViewPager;

@@ -1,12 +1,13 @@
-package com.sjw.androidcustomview;
+package com.sjw.androidcustomview.demo;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 
+import com.sjw.androidcustomview.R;
 import com.sjw.androidcustomview.viewgroup.CustomBarView;
 
-public class Main2Activity extends Activity implements CustomBarView.BackListener {
+public class BackActivity extends Activity implements CustomBarView.BackListener {
     private CustomBarView custom_bar_view;
 
     @Override

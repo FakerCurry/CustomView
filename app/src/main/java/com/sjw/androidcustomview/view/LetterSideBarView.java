@@ -1,4 +1,4 @@
-package com.sjw.androidcustomview;
+package com.sjw.androidcustomview.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,6 +12,8 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
+
+import com.sjw.androidcustomview.R;
 
 /**
  * Created by pc on 2018/6/17.

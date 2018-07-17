@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sjw.androidcustomview.Main2Activity">
+    tools:context="com.sjw.androidcustomview.demo.BackActivity">
 
     <com.sjw.androidcustomview.viewgroup.CustomBarView
         android:id="@+id/custom_bar_view"

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sjw.androidcustomview.demo.ColorTextviewActivity">
+
+    <com.sjw.androidcustomview.view.ColorChangeView
+        android:id="@+id/colorChangeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello 你好"
+
+        app:changeColor="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="leftToRight"
+            android:text="左到右" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightToLeft"
+            android:text="右到左" />
+    </LinearLayout>
+
+
+</LinearLayout>

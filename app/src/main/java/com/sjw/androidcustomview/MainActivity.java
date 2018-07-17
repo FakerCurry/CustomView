@@ -9,6 +9,10 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 
+import com.sjw.androidcustomview.view.ColorChangeView;
+import com.sjw.androidcustomview.view.LetterSideBarView;
+import com.sjw.androidcustomview.view.QQStepyView;
+
 public class MainActivity extends AppCompatActivity implements LetterSideBarView.LetterTouchListener {
 
     private ColorChangeView colorChangeView;
